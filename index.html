@@ -430,14 +430,20 @@
           </ul>
         </div>
         <div class="sign-up">
-        <p class="join-text">Підпишіться на розсилку</p>
-        <form class="sign-up-form">
-           <input type="email" class="sign-up-form-imput" name="user_email" placeholder="E-mail" required/>
-          <button type="submit" class="sing-up-btn"><span class="sing-up-btn-text">Підписатися</span></button>
-        </form>
+          <p class="join-text">Підпишіться на розсилку</p>
+          <form class="sign-up-form">
+            <input
+              type="email"
+              class="sign-up-form-imput"
+              name="user_email"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="sing-up-btn">
+              <span class="sing-up-btn-text">Підписатися</span>
+            </button>
+          </form>
         </div>
-               
-        </label>
       </div>
     </footer>
 
@@ -450,28 +456,48 @@
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-<fieldset>
-  <p>Залиште свої дані, ми вам передзвонимо</p>
-  
-        <form>
-        <label>
-          Ім'я
-        <input type="text" name="modal-form-name" required pattern="[a-zA-Zа-яА-ЯїЇіІ]+"/></label>
-        <label>
-          Телефон
-          <input type="tel" name="modal-form-tel" required/></label>
-        <label>
-          Пошта
-          <input type="text" name="modal-form-mail" required/></label>
-        <label>
-          Коментар
-          <textarea name="user-message" placeholder="Введіть текст"></textarea></label>
-        <label><input type="checkbox"> Погоджуюся з розсилкою та приймаю <a>Умови договору</a></label>
-      </form>
-      </fieldset>
-      </div>
+        <form class="modal-form">
+          <p class="modal-form-titel">Залиште свої дані, ми вам передзвонимо</p>
+          <label class="modal-form-label">
+            <span>Ім'я</span>
+            <input
+              type="text"
+              class="modal-form-user-input"
+              name="user-name"
+              required
+              pattern="[a-zA-Zа-яА-ЯїЇіІ]+"
+          /></label>
 
-      
+          <label class="modal-form-label">
+            <span>Телефон</span>
+            <input type="tel" class="modal-form-user-input" name="user-tel" required
+          /></label>
+
+          <label class="modal-form-label">
+            <span>Пошта</span>
+            <input type="email" class="modal-form-user-input" name="user-mail" required
+          /></label>
+
+          <label class="modal-form-label">
+            <span>Коментар</span>
+            <textarea
+              name="user-message"
+              class="modal-form-user-message"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+
+          <label class="modal-form-user-condition">
+            <input type="checkbox" />
+            <span class="checkbox-text"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#" class="modal-form-user-condition-link">Умови договору</a></span
+            ></label
+          >
+
+          <button type="submit" class="modal-form-btn-send">Відправити</button>
+        </form>
+      </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
