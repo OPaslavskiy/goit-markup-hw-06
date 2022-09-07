@@ -460,23 +460,39 @@
           <p class="modal-form-titel">Залиште свої дані, ми вам передзвонимо</p>
           <label class="modal-form-label">
             <span>Ім'я</span>
-            <input
-              type="text"
-              class="modal-form-user-input"
-              name="user-name"
-              required
-              pattern="[a-zA-Zа-яА-ЯїЇіІ]+"
-          /></label>
+            <div class="modal-form-imput-icon">
+              <input
+                type="text"
+                class="modal-form-user-input"
+                name="user-name"
+                required
+                pattern="[a-zA-Zа-яА-ЯїЇіІ]+"
+              />
+              <svg width="18px" height="18px" class="modal-form-icon">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
 
           <label class="modal-form-label">
             <span>Телефон</span>
-            <input type="tel" class="modal-form-user-input" name="user-tel" required
-          /></label>
+            <div class="modal-form-imput-icon">
+              <input type="tel" class="modal-form-user-input" name="user-tel" required />
+              <svg width="18px" height="18px" class="modal-form-icon">
+                <use href="./images/sprite.svg#icon-phone-modal"></use>
+              </svg>
+            </div>
+          </label>
 
           <label class="modal-form-label">
             <span>Пошта</span>
-            <input type="email" class="modal-form-user-input" name="user-mail" required
-          /></label>
+            <div class="modal-form-imput-icon">
+              <input type="email" class="modal-form-user-input" name="user-mail" required />
+              <svg width="18px" height="18px" class="modal-form-icon">
+                <use href="./images/sprite.svg#icon-leter-modal"></use>
+              </svg>
+            </div>
+          </label>
 
           <label class="modal-form-label">
             <span>Коментар</span>
